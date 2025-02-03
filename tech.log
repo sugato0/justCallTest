@@ -207,3 +207,42 @@ Traceback (most recent call last):
     ).fetchone()[0]
     ^
 sqlite3.ProgrammingError: Cannot operate on a closed database.
+2025-02-03 12:24:34,964 - INFO - db connected/updated
+2025-02-03 12:24:36,587 - INFO - Получатель по 79062344868 не найден
+2025-02-03 12:24:36,985 - INFO - Получатель по 79062344868 успешно добавлен в контакты
+2025-02-03 12:24:38,153 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:24:39,311 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:24:40,484 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:24:41,657 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:24:42,827 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:24:44,000 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:24:45,173 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:24:46,345 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:24:47,519 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:24:48,691 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:24:48,692 - ERROR - OperationalError: Блокировка базы данных, вероятная ошибка дублирование соедененных сессий 79234978082
+2025-02-03 12:24:48,711 - INFO - db connected/updated
+2025-02-03 12:24:49,071 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-27' coro=<Session.restart() done, defined at D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py:182> exception=ProgrammingError('Cannot operate on a closed database.')>
+Traceback (most recent call last):
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py", line 184, in restart
+    await self.start()
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py", line 149, in start
+    raise e
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py", line 124, in start
+    api_id=await self.client.storage.api_id(),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 195, in api_id
+    return self._accessor(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 189, in _accessor
+    return self._get() if value == object else self._set(value)
+           ~~~~~~~~~^^
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 175, in _get
+    return self.conn.execute(
+           ~~~~~~~~~~~~~~~~~^
+        f"SELECT {attr} FROM sessions"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ).fetchone()[0]
+    ^
+sqlite3.ProgrammingError: Cannot operate on a closed database.

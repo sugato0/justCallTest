@@ -11,6 +11,8 @@ from dotenv import load_dotenv
 from os import getenv
 load_dotenv()
 
+FROM_ENV = True
+
 async def send(from_account: str, to_account: str, text: str, error_index:int = 0):
     """
     Асинхронная функция для отправки сообщения от одного аккаунта другому.
@@ -42,17 +44,18 @@ async def send(from_account: str, to_account: str, text: str, error_index:int = 
     # Формируем имя сессии на основе идентификатора аккаунта
     session_name = f"sessions/{from_account}"
     #Вариант получения аккаунтов из accounts.csv
-    """
+    
+    if FROM_ENV:
+        api_id = str(getenv(f"API_ID_{from_account}"))
+        api_hash = str(getenv(f"API_HASH_{from_account}"))
+    else:
         account = accounts_db.get_lines(
             key = "phone",
             value = from_account
         )
         api_id = account.get("api_id")
         api_hash = account.get("api_hash")
-    """
-    api_id = str(getenv(f"API_ID_{from_account}"))
-    api_hash = str(getenv(f"API_HASH_{from_account}"))
-    
+
 
     try:
         # Подключаемся к аккаунту с использованием клиента
