@@ -1,0 +1,9 @@
+id,phone_sender,phone_recipient,message_text,location,date_entered,status,error_text,date_sent
+1,79234978082,79114862366,Testing message,TG,,1.0,,2025-02-03 11:57:52
+2,79234978082,79114862366,Other testing message,TG,,1.0,,2025-02-03 11:57:53
+3,79234978082,79114862366,Protected phone number,TG,,1.0,,2025-02-03 11:57:54
+4,79234978082,79114862366,Protected phone number 2,TG,,1.0,,2025-02-03 11:57:55
+5,79234978082,79622685701,"hello, world",TG,,1.0,,2025-02-03 11:58:03
+6,79234978082,79062344868,"hello, world",TG,,2.0,Connection Error: database is locked,
+7,79234978082,79622685701,ttt,TG,,1.0,,2025-02-03 11:39:16
+8,79234978082,79632920808,"Добрый день, Эдуард! ",TG,,1.0,,2025-02-03 11:58:12

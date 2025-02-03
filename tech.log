@@ -1,0 +1,209 @@
+2025-02-03 02:59:50,861 - INFO - Отправлено сообщение от: 79234978082 кому: 79118639064
+2025-02-03 02:59:51,584 - INFO - Отправлено сообщение от: 79234978082 кому: 79118639064
+2025-02-03 11:10:44,857 - ERROR - Неопознанная ошибка при подключении к аккаунту 79234978082: 'int' object has no attribute 'strip'
+2025-02-03 11:12:19,690 - INFO - Получатель по 79118639064 не найден
+2025-02-03 11:12:19,945 - INFO - Получатель по 79118639064 успешно добавлен в контакты
+2025-02-03 11:12:25,780 - ERROR - Неопознанная ошибка при подключении к аккаунту 79234978082: database is locked
+2025-02-03 11:13:41,101 - INFO - Отправлено сообщение от: 79234978082 кому: 79118639064
+2025-02-03 11:20:56,589 - INFO - Отправлено сообщение от: 79234978082 кому: 79118639064
+2025-02-03 11:28:10,236 - INFO - db connected
+2025-02-03 11:28:11,666 - INFO - Отправлено сообщение от: 79234978082 кому: 79118639064
+2025-02-03 11:28:11,674 - INFO - db connected
+2025-02-03 11:29:11,684 - INFO - db connected
+2025-02-03 11:29:12,475 - INFO - Отправлено сообщение от: 79234978082 кому: 79118639064
+2025-02-03 11:29:12,483 - INFO - db connected
+2025-02-03 11:30:12,505 - INFO - db connected
+2025-02-03 11:31:12,508 - INFO - db connected
+2025-02-03 11:32:34,247 - INFO - db connected
+2025-02-03 11:32:50,480 - INFO - db connected
+2025-02-03 11:32:51,617 - INFO - Отправлено сообщение от: 79234978082 кому: 79118639064
+2025-02-03 11:32:51,625 - INFO - db connected
+2025-02-03 11:33:37,022 - INFO - db connected
+2025-02-03 11:33:38,206 - INFO - Отправлено сообщение от: 79234978082 кому: 79118639064
+2025-02-03 11:33:38,233 - INFO - db connected
+2025-02-03 11:33:38,962 - INFO - Отправлено сообщение от: 79234978082 кому: 79118639064
+2025-02-03 11:33:38,992 - INFO - db connected
+2025-02-03 11:33:39,778 - INFO - Отправлено сообщение от: 79234978082 кому: 79118639064
+2025-02-03 11:33:39,803 - INFO - db connected
+2025-02-03 11:33:40,530 - INFO - Отправлено сообщение от: 79234978082 кому: 79118639064
+2025-02-03 11:33:40,537 - INFO - db connected
+2025-02-03 11:38:59,962 - INFO - db connected/updated
+2025-02-03 11:39:01,070 - INFO - Получатель по 79114862366 не найден
+2025-02-03 11:39:01,188 - INFO - Получатель по 79114862366 успешно добавлен в контакты
+2025-02-03 11:39:02,346 - ERROR - Ошибка при подключении к аккаунту 79234978082: database is locked
+2025-02-03 11:39:02,373 - INFO - db connected/updated
+2025-02-03 11:39:02,378 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-29' coro=<Client.handle_updates() done, defined at D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\client.py:535> exception=ProgrammingError('Cannot operate on a closed database.')>
+Traceback (most recent call last):
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\client.py", line 540, in handle_updates
+    await self.fetch_peers(updates.users),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\client.py", line 531, in fetch_peers
+    await self.storage.update_peers(parsed_peers)
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 129, in update_peers
+    self.conn.executemany(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        "REPLACE INTO peers (id, access_hash, type, username, phone_number)"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "VALUES (?, ?, ?, ?, ?)",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+        peers
+        ^^^^^
+    )
+    ^
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+2025-02-03 11:39:03,319 - INFO - Отправлено сообщение с текстом Other testing message от: 79234978082 кому: 79114862366 
+2025-02-03 11:39:03,353 - INFO - db connected/updated
+2025-02-03 11:39:04,401 - INFO - Отправлено сообщение с текстом Protected phone number от: 79234978082 кому: 79114862366 
+2025-02-03 11:39:04,426 - INFO - db connected/updated
+2025-02-03 11:39:05,806 - INFO - Отправлено сообщение с текстом Protected phone number 2 от: 79234978082 кому: 79114862366 
+2025-02-03 11:39:05,841 - INFO - db connected/updated
+2025-02-03 11:39:11,750 - INFO - Получатель по 79622685701 не найден
+2025-02-03 11:39:11,912 - INFO - Получатель по 79622685701 успешно добавлен в контакты
+2025-02-03 11:39:13,075 - ERROR - Ошибка при подключении к аккаунту 79234978082: database is locked
+2025-02-03 11:39:13,104 - INFO - db connected/updated
+2025-02-03 11:39:13,106 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-137' coro=<Client.handle_updates() done, defined at D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\client.py:535> exception=ProgrammingError('Cannot operate on a closed database.')>
+Traceback (most recent call last):
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\client.py", line 540, in handle_updates
+    await self.fetch_peers(updates.users),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\client.py", line 531, in fetch_peers
+    await self.storage.update_peers(parsed_peers)
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 129, in update_peers
+    self.conn.executemany(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        "REPLACE INTO peers (id, access_hash, type, username, phone_number)"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "VALUES (?, ?, ?, ?, ?)",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+        peers
+        ^^^^^
+    )
+    ^
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+2025-02-03 11:39:13,749 - INFO - Получатель по 79062344868 не найден
+2025-02-03 11:39:13,843 - INFO - Получатель по 79062344868 успешно добавлен в контакты
+2025-02-03 11:39:15,016 - ERROR - Ошибка при подключении к аккаунту 79234978082: database is locked
+2025-02-03 11:39:15,042 - INFO - db connected/updated
+2025-02-03 11:39:16,027 - INFO - Отправлено сообщение с текстом ttt от: 79234978082 кому: 79622685701 
+2025-02-03 11:39:16,058 - INFO - db connected/updated
+2025-02-03 11:39:16,949 - INFO - Получатель по 79632920808 не найден
+2025-02-03 11:39:17,151 - INFO - Получатель по 79632920808 успешно добавлен в контакты
+2025-02-03 11:39:18,303 - ERROR - Ошибка при подключении к аккаунту 79234978082: database is locked
+2025-02-03 11:39:18,313 - INFO - db connected/updated
+2025-02-03 11:43:43,396 - INFO - db connected/updated
+2025-02-03 11:43:49,952 - INFO - Отправлено сообщение с текстом Testing message от: 79234978082 кому: 79114862366 
+2025-02-03 11:43:50,041 - INFO - db connected/updated
+2025-02-03 11:43:51,281 - INFO - Отправлено сообщение с текстом hello, world от: 79234978082 кому: 79622685701 
+2025-02-03 11:43:51,363 - INFO - db connected/updated
+2025-02-03 11:43:52,079 - INFO - Получатель по 79062344868 не найден
+2025-02-03 11:43:52,174 - INFO - Получатель по 79062344868 успешно добавлен в контакты
+2025-02-03 11:57:50,650 - INFO - db connected/updated
+2025-02-03 11:57:52,473 - INFO - Отправлено сообщение с текстом Testing message от: 79234978082 кому: 79114862366 
+2025-02-03 11:57:52,508 - INFO - db connected/updated
+2025-02-03 11:57:53,598 - INFO - Отправлено сообщение с текстом Other testing message от: 79234978082 кому: 79114862366 
+2025-02-03 11:57:53,639 - INFO - db connected/updated
+2025-02-03 11:57:54,908 - INFO - Отправлено сообщение с текстом Protected phone number от: 79234978082 кому: 79114862366 
+2025-02-03 11:57:54,961 - INFO - db connected/updated
+2025-02-03 11:57:55,952 - INFO - Отправлено сообщение с текстом Protected phone number 2 от: 79234978082 кому: 79114862366 
+2025-02-03 11:57:55,986 - INFO - db connected/updated
+2025-02-03 11:58:03,320 - INFO - Отправлено сообщение с текстом hello, world от: 79234978082 кому: 79622685701 
+2025-02-03 11:58:03,354 - INFO - db connected/updated
+2025-02-03 11:58:04,293 - INFO - Получатель по 79062344868 не найден
+2025-02-03 11:58:04,548 - INFO - Получатель по 79062344868 успешно добавлен в контакты
+2025-02-03 11:58:05,717 - WARNING - Попытка двойного подключения, переотправка 79234978082
+2025-02-03 11:58:06,879 - WARNING - Попытка двойного подключения, переотправка 79234978082
+2025-02-03 11:58:08,056 - WARNING - Попытка двойного подключения, переотправка 79234978082
+2025-02-03 11:58:09,199 - WARNING - Попытка двойного подключения, переотправка 79234978082
+2025-02-03 11:58:10,338 - WARNING - Попытка двойного подключения, переотправка 79234978082
+2025-02-03 11:58:11,502 - WARNING - Попытка двойного подключения, переотправка 79234978082
+2025-02-03 11:58:11,502 - ERROR - OperationalError: Блокировка базы данных, вероятная ошибка дублирование соедененных сессий 79234978082
+2025-02-03 11:58:11,511 - ERROR - Ошибка при подключении к аккаунту 79234978082: cannot access local variable 'e' where it is not associated with a value
+2025-02-03 11:58:11,540 - INFO - db connected/updated
+2025-02-03 11:58:12,734 - INFO - Отправлено сообщение с текстом Добрый день, Эдуард!  от: 79234978082 кому: 79632920808 
+2025-02-03 11:58:12,745 - INFO - db connected/updated
+2025-02-03 11:59:12,752 - INFO - db connected/updated
+2025-02-03 12:00:12,770 - INFO - db connected/updated
+2025-02-03 12:01:12,783 - INFO - db connected/updated
+2025-02-03 12:02:12,788 - INFO - db connected/updated
+2025-02-03 12:03:07,658 - INFO - db connected/updated
+2025-02-03 12:03:09,519 - INFO - Получатель по 79062344868 не найден
+2025-02-03 12:03:09,642 - INFO - Получатель по 79062344868 успешно добавлен в контакты
+2025-02-03 12:03:10,779 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:03:11,914 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:03:13,087 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:03:14,240 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:03:15,408 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:03:16,585 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:03:17,747 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:03:18,915 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:03:20,087 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:03:21,256 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:03:21,257 - ERROR - OperationalError: Блокировка базы данных, вероятная ошибка дублирование соедененных сессий 79234978082
+2025-02-03 12:03:21,276 - INFO - db connected/updated
+2025-02-03 12:03:21,674 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-27' coro=<Session.restart() done, defined at D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py:182> exception=ProgrammingError('Cannot operate on a closed database.')>
+Traceback (most recent call last):
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py", line 184, in restart
+    await self.start()
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py", line 149, in start
+    raise e
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py", line 124, in start
+    api_id=await self.client.storage.api_id(),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 195, in api_id
+    return self._accessor(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 189, in _accessor
+    return self._get() if value == object else self._set(value)
+           ~~~~~~~~~^^
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 175, in _get
+    return self.conn.execute(
+           ~~~~~~~~~~~~~~~~~^
+        f"SELECT {attr} FROM sessions"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ).fetchone()[0]
+    ^
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+2025-02-03 12:04:21,279 - INFO - db connected/updated
+2025-02-03 12:05:21,282 - INFO - db connected/updated
+2025-02-03 12:06:21,310 - INFO - db connected/updated
+2025-02-03 12:06:22,319 - INFO - Получатель по 79062344868 не найден
+2025-02-03 12:06:22,422 - INFO - Получатель по 79062344868 успешно добавлен в контакты
+2025-02-03 12:06:23,561 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:06:24,719 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:06:25,903 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:06:27,080 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:06:28,234 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:06:29,410 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:06:30,569 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:06:31,722 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:06:32,866 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:06:34,024 - WARNING - Попытка двойного подключения, переотправка от 79234978082 кому 79062344868
+2025-02-03 12:06:34,024 - ERROR - OperationalError: Блокировка базы данных, вероятная ошибка дублирование соедененных сессий 79234978082
+2025-02-03 12:06:34,043 - INFO - db connected/updated
+2025-02-03 12:06:34,391 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-57' coro=<Session.restart() done, defined at D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py:182> exception=ProgrammingError('Cannot operate on a closed database.')>
+Traceback (most recent call last):
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py", line 184, in restart
+    await self.start()
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py", line 149, in start
+    raise e
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\session\session.py", line 124, in start
+    api_id=await self.client.storage.api_id(),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 195, in api_id
+    return self._accessor(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 189, in _accessor
+    return self._get() if value == object else self._set(value)
+           ~~~~~~~~~^^
+  File "D:\small_tasks\justCallTest\venv\Lib\site-packages\pyrogram\storage\sqlite_storage.py", line 175, in _get
+    return self.conn.execute(
+           ~~~~~~~~~~~~~~~~~^
+        f"SELECT {attr} FROM sessions"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ).fetchone()[0]
+    ^
+sqlite3.ProgrammingError: Cannot operate on a closed database.
